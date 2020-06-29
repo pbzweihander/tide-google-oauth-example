@@ -1,0 +1,6 @@
+secret_key = "very secure secret key"
+
+[google_oauth]
+client_id = ""
+client_secret = ""
+redirect_url = "http://localhost:8080/login/authorized/"

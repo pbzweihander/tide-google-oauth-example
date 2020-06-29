@@ -1,0 +1,18 @@
+[package]
+name = "tide-google-oauth-example"
+version = "0.1.0"
+authors = ["pbzweihander <pbzweihander@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+async-std = { version = "1.6.2", features = ["attributes", "tokio02"] }
+anyhow = "1.0.31"
+configer = { package = "config", version = "0.10.1", features = ["toml"] }
+failure = "0.1.8"
+futures = "0.3.5"
+oauth2 = { version = "3.0.0", default-features = false, features = ["futures-03", "reqwest-010"] }
+structopt = "0.3.15"
+serde = { version = "1.0.114", features = ["derive"] }
+surf = { version = "2.0.0-alpha.4", default-features = false, features = ["h1-client"] }
+tide = "0.11.0"
+tide-secure-cookie-session = { git = "https://github.com/pbzweihander/tide-secure-cookie-session.git" }
